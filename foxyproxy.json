@@ -1,0 +1,32 @@
+{
+  "proxies": [
+    {
+      "title": "Caido Proxy",
+      "proxyType": "HTTP",
+      "host": "127.0.0.1",
+      "port": 8080,
+      "patterns": [
+        {
+          "pattern": "*localhost:4000*",
+          "type": "WILDCARD"
+        },
+        {
+          "pattern": "*localhost:3000*",
+          "type": "WILDCARD"
+        },
+        {
+          "pattern": "*127.0.0.1:4000*",
+          "type": "WILDCARD"
+        },
+        {
+          "pattern": "*your-dvwa.herokuapp.com*",
+          "type": "WILDCARD"
+        },
+        {
+          "pattern": "*targetsite.com*",
+          "type": "WILDCARD"
+        }
+      ]
+    }
+  ]
+}
